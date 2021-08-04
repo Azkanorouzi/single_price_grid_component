@@ -1,0 +1,204 @@
+/* CODED BY AZKA NOROUZI */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+/* defaults */
+*{
+ margin: 0px;
+ padding: 0px;
+ box-sizing: border-box;
+
+ font-family: 'Karla', sans-serif;
+ font-size: 1rem;
+}
+
+body{
+ background-color: hsl(218, 22%, 67%);
+ width: 95vw;
+ height: 100vh;
+ overflow-x: hidden;
+}
+.flex{
+ display: flex;
+ width: 100%;
+ height: 100%;
+ justify-content: center;
+ align-items: center;
+}
+/* card and grid structure */
+.attribution{
+ display: none;
+}
+.card{
+ width: 90vw;
+ display: grid;
+ grid-template-columns: 1fr;
+ grid-template-rows: 32vh 32vh 32vh;
+}
+.card div{
+ padding: 25px 20px;
+}
+/* community */
+.com{
+ grid-row: 1/2;
+  grid-column: 1/2;
+  background: hsl(204, 43%, 93%);
+}
+.com h1{
+ color: hsl(179, 62%, 43%);
+ font-weight: 700;
+ font-size: 20px;
+ margin-bottom: 20px;
+}
+.com h2{
+ color: hsl(71, 73%, 54%);
+ font-weight: 700;
+ margin-bottom: 20px;
+}
+.com .com-des{
+color: hsl(218, 22%, 67%);
+line-height: 25px;
+}
+/* community end */
+
+/* sub */
+
+.sub{
+  grid-row: 2/3;
+  grid-column: 1/2;
+  background: hsl(179, 62%, 43%);
+}
+.sub h1{
+ color: white;
+ font-weight: 700;
+ font-size: 20px;
+}
+.sub h2{
+ color: hsl(71, 73%, 54%);
+ font-weight: 700;
+ font-size: 30px;
+ color: white;
+}
+.sub h2 span{
+ color: hsla(0, 0%, 100%, 0.548);
+ position: relative;
+ bottom: 6px;
+}
+.sub .sub-des{
+color: rgba(255, 255, 255, 0.884);
+margin-top: 5px;
+}
+.sub button{
+ background-color:hsl(71, 73%, 54%) ;
+ color: white;
+ border: none;
+ border-radius: 5px;
+ padding: 25px;
+ width: 100%;
+ margin-top: 20%;
+ box-shadow:0px 0px 20px 1px rgba(0, 0, 0, 0.199);
+ cursor: pointer;
+ transition: .5s box-shadow;
+}
+.sub button:hover{
+box-shadow:0px 0px 2px 1px white;
+border-radius: 20px;
+}
+/* sub end */
+/* why */
+.why{
+ grid-row: 3/4;
+  grid-column: 1/2;
+  background: hsl(178, 69%, 54%);
+}
+.why h1{
+ color:white;
+ font-weight: 700;
+ font-size: 20px;
+ margin-bottom: 20px;
+}
+.why .why-des{
+color: rgba(255, 255, 255, 0.788);
+line-height: 25px;
+padding-right: 100px;
+}
+.card{
+ margin-left: 5vw;
+}
+/* why end */
+
+/* small devices media query */
+@media screen and (max-width:363px){
+ .why .why-des{
+  padding-right: 5px;
+  margin-bottom: 40px;
+color: rgba(255, 255, 255, 0.788);
+line-height: 20px;
+padding-right: 100px;
+}
+}
+@media screen and (max-width:325px){
+
+.why h1{
+ margin-bottom: 3px;
+
+}
+ .why .why-des{
+padding-right: 0px;
+line-height: 15px;
+font-size: 14px;
+}
+}
+@media screen and (max-width:155px){
+ div h1{
+ margin-top: -22px;
+}
+.sub button{
+ padding: 5px;
+}
+}
+@media screen and (min-width:1080px){
+.card{
+  grid-template-columns: 25vw 25vw;
+ grid-template-rows: 15vw 20vw;
+ margin-left: 25vw;
+ margin-right: 25vw;
+}
+.card div{
+  padding: 40px;
+  padding-bottom: 10px;
+}
+.why{
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+/* community */
+.com{
+  grid-column: 1/-1;
+}
+.com h1{
+  font-size: 28px;
+}
+.com h2{
+  font-size: 20px;
+  position: relative;
+  top: 5px;
+}
+.com p{
+  padding-right: 70px;
+}
+.sub h2{
+  margin-top: 15px;
+}
+.sub button{
+  padding: 15px;
+  width: 250px;
+}
+.why .why-des{
+  padding-right: 10px;
+}
+}
+
+
+.card div{
+  overflow-x: scroll;
+}
+/* end */
